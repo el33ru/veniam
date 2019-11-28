@@ -1,0 +1,101 @@
+.slider__buttons {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.slider__button {
+  cursor: pointer;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #b5babc;
+  &:hover {
+    background-color:  $bg-lightblue;
+  }
+}
+
+.slider__button--left {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: 2px;
+    height: 12px;
+    transform: rotate(45deg);
+
+    background-color: $bg-lightblue;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: 2px;
+    height: 12px;
+    transform: rotate(140deg);
+
+    background-color: $bg-lightblue;
+  }
+  &:hover {
+    &::before {
+      background-color: #ffffff;
+    }
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.slider__button--right {
+  position: relative;
+  margin-left: 5px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: 2px;
+    height: 12px;
+    transform: rotate(140deg);
+
+    background-color:  $bg-lightblue;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    width: 2px;
+    height: 12px;
+    transform: rotate(45deg);
+
+    background-color:  $bg-lightblue;
+  }
+  &:hover {
+    &::before {
+      background-color: #ffffff;
+    }
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}

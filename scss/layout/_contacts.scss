@@ -1,0 +1,241 @@
+.contacts {
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 720px;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.contacts__block {
+  margin-right: 20px;
+  margin-top: 45px;
+  margin-bottom: 75px;
+  width: 380px;
+  background-color: $bg-silver;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.contacts .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contacts__header {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: $bg-darkblue;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.contacts__form__list {
+  @include reset-list;
+}
+
+.contacts__form__text {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  width: 310px;
+
+  border: 1px solid #c3d1d5;
+  border-radius: 5px;
+  &::placeholder {
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e414c;
+  }
+  &:hover {
+    border: 1px solid #5cb1cb;
+  }
+  &:focus {
+    border-bottom: 1px solid #5cb1cb;
+  }
+}
+
+.contacts__form__additionally {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  width: 310px;
+  height: 185px;
+
+  border: 1px solid #c3d1d5;
+  border-radius: 5px;
+
+  min-height: 185px;
+  max-height: 240px;
+  resize: vertical;
+  outline: none;
+
+  box-sizing: border-box;
+  &::placeholder {
+    font-size: 15px;
+    line-height: 20px;
+    color: #1e414c;
+  }
+  &:hover {
+    border: 1px solid #5cb1cb;
+  }
+  &:focus {
+    border-bottom: 1px solid #5cb1cb;
+  }
+}
+
+.contacts__form__label {
+  font-size: 13px;
+  line-height: 20px;
+  color: #c3d1d5;
+}
+
+.contacts__form__label a {
+  color: $bg-lightblue;
+}
+
+.item__consent {
+  margin-top: 15px;
+}
+
+.label__сheck {
+  position: relative;
+  padding-right: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+
+    top: 3px;
+    right: 0;
+
+    width: 15px;
+    height: 15px;
+    background-color:  $bg-lightblue;
+
+  }
+}
+
+.contacts__form__checkbox:checked {
+  & + span {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 2px;
+
+      width: 10px;
+      height: 8px;
+
+
+      background-image: url("../../img/l-tick.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.contacts__button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  .contacts {
+    margin-top: 0;
+    height: auto;
+  }
+  .contacts__map {
+    position: relative;
+    height: 400px;
+  }
+  .contacts__block {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .contacts__button {
+    width: 310px;
+  }
+}
+
+@media (max-width: 350px) {
+  .contacts__header {
+    margin-left: 20px;
+
+    font-size: 25px;
+    text-align: left;
+  }
+  .contacts__form__text {
+    max-width: 280px;
+  }
+  .contacts__form__additionally {
+    max-width: 280px;
+  }
+  .item__consent {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  .label__сheck {
+    position: relative;
+    padding-left: 0;
+    color: black;
+
+    &::before {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+
+      top: 3px;
+      right: auto;
+      left: -30px;
+
+      width: 15px;
+      height: 15px;
+      background-color:  $bg-lightblue;
+
+    }
+  }
+  .contacts__form__checkbox:checked {
+    & + span {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: auto;
+        left: -27px;
+
+        width: 10px;
+        height: 8px;
+
+
+        background-image: url("../../img/l-tick.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+  .contacts__button {
+    max-width: 280px;
+  }
+}

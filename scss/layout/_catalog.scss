@@ -1,0 +1,158 @@
+.catalog {
+  position: relative;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: $bg-darkblue;
+}
+
+.catalog__header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  font-size: 35px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.catalog__list {
+  @include reset-list;
+  max-width: 180px;
+}
+
+.catalog__item {
+  cursor: pointer;
+  position: relative;
+  padding-left: 13px;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 18px;
+    background-color: #ffffff;
+  }
+  &:hover {
+    margin-left: 15px;
+  }
+}
+
+.catalog__item a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.js-catalog__button {
+  display: none;
+}
+
+
+@media (max-width: 650px) {
+  .catalog {
+    padding: 0;
+    width: 100%;
+  }
+  .catalog__header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .catalog_navigation {
+    width: 100%;
+  }
+  .catalog__list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .catalog__item {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444444;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 29px;
+      left: auto;
+      right: 20px;
+
+      width: 1px;
+      height: 7px;
+      transform: rotate(45deg);
+
+      background-color: #ffffff;
+      color: $bg-darkblue;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 20px;
+
+      width: 1px;
+      height: 7px;
+      transform: rotate(145deg);
+
+      background-color:  #ffffff;
+      color: $bg-darkblue;
+    }
+    &:hover {
+      margin-left: 0;
+      background-color:  #ffffff;
+      a {
+        color: $bg-darkblue;
+      }
+      &::before {
+        background-color: $bg-darkblue;
+      }
+      &::after {
+        background-color: $bg-darkblue;
+      }
+    }
+    &:focus {
+      background-color:  #ffffff;
+      color: $bg-darkblue;
+      a {
+        color: $bg-darkblue;
+      }
+      &::before {
+        background-color: $bg-darkblue;
+      }
+      &::after {
+        background-color: $bg-darkblue;
+      }
+    }
+  }
+  .catalog__navigation {
+    display: none;
+  }
+  .catalog__header {
+    display: none;
+  }
+  .catalog__background {
+    display: flex;
+    flex-grow: 1;
+    background-color: #ffffff;
+  }
+  .js-catalog__button {
+    flex-grow: 1;
+    justify-content: center;
+    margin: 20px;
+    display: block;
+    background-color: $bg-darkblue;
+  }
+}
+
+@media (max-width: 320px) {
+  .catalog__item a {
+    font-size: 15px;
+  }
+}

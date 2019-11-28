@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Veniam</title>
+
+    <link rel="preload" href="build/fonts/open-sans-v17-cyrillic-300.woff2" as="font">
+    <link rel="preload" href="build/fonts/open-sans-v17-latin_cyrillic-regular.woff2" as="font">
+    <link rel="preload" href="build/fonts/open-sans-v17-cyrillic-700.woff2" as="font">
+
+    <link rel = "stylesheet" href = "node_modules/owl.carousel/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="build/css/style.min.css"/>
+
+</head>
+<body>
+<header class="page-header page-header--nojs">
+    <div class="page-header__wrapper container">
+        <div class="page-header__menu">
+            <a class="page-logo page-header__logo">
+                <picture>
+                    <img class="page-header__logo-image" src="img/logo.png" width="217" height="48" alt="Магазин одежды Veniam">
+                </picture>
+            </a>
+            <div class="page-header__toggle toggle-status toggle-status--nojs">
+                <button class="js__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </div>
+        </div>
+        <nav class="user-nav">
+            <ul class="user-list">
+                <li class="user-list__item time-to-call">
+                    <p class="user-list__item__time">с 9 до 18:00</p>
+                    <p class="user-list__item__phone">
+                        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+                    </p>
+                </li>
+                <li class="user-list__item connection">
+                    <button class="button user-list__item__button" type="button">Перезвоните мне</button>
+                </li>
+                <li class="user-list__item connection">
+                    <button class="button user-list__item__button" type="button">Оставить заявку</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="site-nav__wrapper">
+        <nav class="site-nav container">
+            <ul class="site-list">
+                <li class="site-list__item">
+                    <a href="#">О компании</a>
+                </li>
+                <li class="site-list__item site-list__item__parrent">
+                    <a href="#">Каталог</a>
+                        <ul class="site-list__catalog">
+                            <li class="site-list__catalog__item">
+                                <a href="#">Пункт номер один</a>
+                            </li>
+                            <li class="site-list__catalog__item">
+                                <a href="#">Пункт номер два</a>
+                            </li>
+                            <li class="site-list__catalog__item">
+                                <a href="#">Пункт номер три</a>
+                            </li>
+                            <li class="site-list__catalog__item">
+                                <a href="#">Пункт номер четыре</a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Доставка и оплата</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Статьи</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Фотогалерея</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="site-nav__buttons">
+                <button class="site-nav__button" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <ul class="site-nav__button__list">
+                    <li class="site-nav__button__item">
+                        <a href="#">Пункт номер один</a>
+                    </li>
+                    <li class="site-nav__button__item">
+                        <a href="#">Пункт номер два</a>
+                    </li>
+                    <li class="site-nav__button__item">
+                        <a href="#">Пункт номер три</a>
+                    </li>
+                    <li class="site-nav__button__item">
+                        <a href="#">Пункт номер четыре</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="page-main">
+    <section class="slider">
+        <h2 class="visually-hidden">Слайдер</h2>
+            <div class="owl-carousel slide-one">
+                <div class="slide slide1">
+                    <div class="container">
+                        <p class="slider__header">Найдите новую одежду</p>
+                        <p class="slider__text">Обновите ваш гардероб к новому сезону</p>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="container">
+                        <p class="slider__header">Найдите новую одежду</p>
+                        <p class="slider__text">Обновите ваш гардероб к новому сезону</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="slider__wrapper">
+                    <p class="slider__buttons">
+                        <button class="slider__button slider__button--left" type="button">
+                            <label class="visually-hidden">Влево</label>
+                        </button>
+                        <button class="slider__button slider__button--right" type="button">
+                            <label class="visually-hidden">Вправо</label>
+                        </button>
+                    </p>
+                    <div class="counter"></div>
+                </div>
+            </div>
+    </section>
+
+    <section class="goods container">
+        <ul class="goods__list">
+            <li class="goods__item">
+                <a href="#" title="Пальто и парки">
+                    <picture>
+                        <source type="image/webp" srcset="img/coat.webp 1x, img/coat@2x.webp 2x">
+                        <img class="goods__image" src="img/coat.png" srcset="img/coat@2x.png 2x" alt="Пальто и парки">
+                    </picture>
+                    <p class="goods__item__title">Пальто и парки</p>
+                </a>
+            </li>
+            <li class="goods__item">
+                <a href="#" title="Куртки и дубленки">
+                    <picture>
+                        <source type="image/webp" srcset="img/jackets.webp 1x, img/jackets@2x.webp 2x">
+                        <img class="goods__image" src="img/jackets.png" srcset="img/jackets@2x.png 2x" alt="Куртки и дубленки">
+                    </picture>
+                    <p class="goods__item__title">Куртки и дубленки</p>
+                </a>
+            </li>
+            <li class="goods__item">
+                <a href="#" title="Тренчи">
+                    <picture>
+                        <source type="image/webp" srcset="img/trench.webp 1x, img/trench@2x.webp 2x">
+                        <img class="goods__image" src="img/trench.png" srcset="img/trench@2x.png 2x" alt="Тренчи">
+                    </picture>
+                    <p class="goods__item__title">Тренчи</p>
+                </a>
+            </li>
+            <li class="goods__item">
+                <a href="#" title="Блейзеры">
+                    <picture>
+                        <source type="image/webp" srcset="img/blazer.webp 1x, img/blazer@2x.webp 2x">
+                        <img class="goods__image" src="img/blazer.png" srcset="img/blazer@2x.png 2x" alt="Блейзеры">
+                    </picture>
+                    <p class="goods__item__title">Блейзеры</p>
+                </a>
+            </li>
+            <li class="goods__item">
+                <a href="#" title="Трикотаж">
+                    <picture>
+                        <source type="image/webp" srcset="img/knitwear.webp 1x, img/knitwear@2x.webp 2x">
+                        <img class="goods__image" src="img/knitwear.png" srcset="img/knitwear@2x.png 2x" alt="Трикотаж">
+                    </picture>
+                    <p class="goods__item__title">Трикотаж</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="line"></div>
+    <div class="catalog__background">
+        <button class="button js-goods__button" type="button">Каталог продукции</button>
+    </div>
+
+    <section class="about-us container">
+        <h1 class="about-us__header">Заголовок H1</h1>
+        <div class="about-us__wrapper">
+            <div class="about-us__column1">
+                <p class="about-us__text">Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент. В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники, книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев: цена, материал изготовления, сезонность, бренд.</p>
+                <button class="button js-about-us__button">Смотреть полностью</button>
+                <p class="about-us__text text__button">Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина. Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей. </p>
+            </div>
+            <div class="about-us__column2">
+                <p class="about-us__picture">
+                    <picture>
+                        <source type="image/webp" media="(max-width: 320px)" srcset="img/girl.webp 1x, img/girl@2x.webp 2x">
+                        <source type="image/webp" srcset="img/girl.webp 1x, img/girl@2x.webp 2x">
+                        <source media="(max-width: 320px)" srcset="img/girl-mobile.png 1x, img/girl-mobile@2x.png 2x">
+                        <img class="about-us__image" src="img/girl.png" srcset="img/girl@2x.png 2x" alt="Фото девушки">
+                    </picture>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hits">
+        <div class="container">
+            <div class="hits__slider">
+                <h2 class="hits__header">Хиты продаж</h2>
+                <p class="slider__buttons">
+                    <button class="slider__button slider__button--left" type="button">
+                        <label class="visually-hidden">Влево</label>
+                    </button>
+                    <button class="slider__button slider__button--right" type="button">
+                        <label class="visually-hidden">Вправо</label>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="hits__wrapper">
+            <ul class="hits__list owl-carousel slide-two owl-theme">
+                <li class="hits__item">
+                    <div class="hits__picture">
+                        <a href="#" title="Плотная рубашка из эластичной джинсовой ткани">
+                            <picture>
+                                <source type="image/webp" srcset="img/hit1.webp 1x, img/hit1@2x.webp 2x">
+                                <img class="hits__image" src="img/hit1.png" srcset="img/hit1@2x.png 2x" alt="Плотная рубашка из эластичной джинсовой ткани">
+                            </picture>
+                        </a>
+                        <button class="hits__cart" type="button"><span class="visually-hidden">Корзина</span></button>
+                    </div>
+                    <div class="hits__signature">
+                        <a href="#" class="hits__item__title">Плотная рубашка из эластичной джинсовой ткани</a>
+                        <p class="hits__item__price">5 999 ₽</p>
+                    </div>
+                </li>
+                <li class="hits__item">
+                    <div class="hits__picture">
+                        <a href="#" title="Плотная рубашка из эластичной джинсовой ткани">
+                            <picture>
+                                <source type="image/webp" srcset="img/hit1.webp 1x, img/hit1@2x.webp 2x">
+                                <img class="hits__image" src="img/hit1.png" srcset="img/hit1@2x.png 2x" alt="Плотная рубашка из эластичной джинсовой ткани">
+                            </picture>
+                        </a>
+                        <button class="hits__cart" type="button"><span class="visually-hidden">Корзина</span></button>
+                        <div class="hits_hit">Хит продаж</div>
+                        <div class="hits_stock">Акция</div>
+                    </div>
+                    <div class="hits__signature">
+                        <a href="#" class="hits__item__title">Плотная рубашка из эластичной джинсовой ткани</a>
+                        <p class="hits__item__price">5 999 ₽</p>
+                    </div>
+                </li>
+                <li class="hits__item">
+                    <div class="hits__picture">
+                        <a href="#" title="Футболка с заклепками">
+                            <picture>
+                                <source type="image/webp" srcset="img/hit2.webp 1x, img/hit2@2x.webp 2x">
+                                <img class="hits__image" src="img/hit2.png" srcset="img/hit2@2x.png 2x" alt="Футболка с заклепками">
+                            </picture>
+                        </a>
+                        <button class="hits__cart" type="button"><span class="visually-hidden">Корзина</span></button>
+                    </div>
+                <div class="hits__signature">
+                    <a href="#" class="hits__item__title">Футболка с заклепками</a>
+                    <p class="hits__item__price">5 999 ₽</p>
+                </div>
+                </li>
+                <li class="hits__item">
+                    <div class="hits__picture">
+                        <a href="#" title="Футболка с эффектом разрывов">
+                            <picture>
+                                <source type="image/webp" srcset="img/hit3.webp 1x, img/hit3@2x.webp 2x">
+                                <img class="hits__image" src="img/hit3.png" srcset="img/hit3@2x.png 2x" alt="Футболка с эффектом разрывов">
+                            </picture>
+                        </a>
+                        <button class="hits__cart" type="button"><span class="visually-hidden">Корзина</span></button>
+                        <div class="hits_hit">Хит продаж</div>
+                    </div>
+                <div class="hits__signature">
+                    <a href="#" class="hits__item__title">Футболка с эффектом разрывов</a>
+                    <p class="hits__item__price">5 999 ₽</p>
+                </div>
+                </li>
+                <li class="hits__item">
+                    <div class="hits__picture">
+                        <a href="#" title="Футболка с эффектом разрывов">
+                            <picture>
+                                <source type="image/webp" srcset="img/hit3.webp 1x, img/hit3@2x.webp 2x">
+                                <img class="hits__image" src="img/hit3.png" srcset="img/hit3@2x.png 2x" alt="Футболка с эффектом разрывов">
+                            </picture>
+                        </a>
+                        <button class="hits__cart" type="button"><span class="visually-hidden">Корзина</span></button>
+                    </div>
+                    <div class="hits__signature">
+                        <a href="#" class="hits__item__title">Футболка с эффектом разрывов</a>
+                        <p class="hits__item__price">5 999 ₽</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="hits__toggles">
+                <button class="hits__toggle"></button>
+                <button class="hits__toggle"></button>
+                <button class="hits__toggle"></button>
+                <button class="hits__toggle"></button>
+                <button class="hits__toggle"></button>
+            </p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="contacts__map">
+            <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ace0ccd78e6ea2b7add241b1e0dd9a4a242037160764e9c30fde8a0ee9273396e&amp;width=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container">
+            <div class="contacts__block">
+                <h2 class="contacts__header">Связаться с нами</h2>
+                <form class="contacts__form" action="#" method="post">
+                    <ul class="contacts__form__list">
+                        <li class="contacts__form__item">
+                            <label class="contacts__form__label"><span class="visually-hidden">Имя</span>
+                                <input class="contacts__form__text" type="text" name="your-name" placeholder="Ваше имя">
+                            </label>
+                        </li>
+                        <li class="contacts__form__item">
+                            <label class="contacts__form__label"><span class="visually-hidden">Телефон</span>
+                                <input class="contacts__form__text" type="tel" name="your-phone" placeholder="Ваш номер телефона">
+                            </label>
+                        </li>
+                        <li class="contacts__form__item">
+                            <label class="contacts__form__label"><span class="visually-hidden">Электронная почта</span>
+                                <input class="contacts__form__text" type="email" name="your-email" placeholder="Электронная почта">
+                            </label>
+                        </li>
+                        <li class="contacts__form__item">
+                            <label class="contacts__form__label"><span class="visually-hidden">Текст сообщения</span>
+                                <textarea class="contacts__form__additionally" name="additionally" placeholder="Текст сообщения"></textarea>
+                            </label>
+                        </li>
+                        <li class="contacts__form__item item__consent">
+                            <label class="contacts__form__label label__сheck">Согласен с <a href="#">политикой конфиденциальности</a>
+                               <input class=" visually-hidden contacts__form__checkbox" type="checkbox" name="contacts-checkbox">
+                               <span class="contacts__form__input-position"></span>
+                            </label>
+                        </li>
+                    </ul>
+                    <button class="button contacts__button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="page-footer__background-silver">
+            <div class="page-footer__column1">
+                <a class="page-logo page-footer__logo">
+                    <picture>
+                        <img class="page-footer__logo-image" src="img/logo.png" width="217" height="48" alt="Магазин одежды Veniam">
+                    </picture>
+                </a>
+
+                <div class="page-footer__phone">
+                    <p>
+                        <a class="contacts-phone" href="tel:+7(000)0000000">+7(000)000-00-00</a>
+                    </p>
+                    <p>
+                        <a class="contacts-phone" href="tel:+7(000)0000000">+7(000)000-00-00</a>
+                    </p>
+                </div>
+
+                <div class="page-footer__work-schedule">
+                    <p>Пн-Пт: c 0:00 до 0:00</p>
+                    <p>Сб-Вс: Выходные</p>
+                </div>
+
+                <div class="page-footer__location-map">
+                    <p>000000, Рыбная обл., г. Рыба, ул. Рыба, дом 00, к. 00 <a href="#">Карта проезда</a></p>
+                </div>
+
+                <div class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--vk" href="#" title="Мы в контакте">
+                                <span class="visually-hidden">Мы в Контакте</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--tw" href="#" title="Мы в Твиттере">
+                                <span class="visually-hidden">Мы в Твиттере</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке">
+                                <span class="visually-hidden">Мы в Фейсбуке</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--google" href="#" title="Мы в Google Plus">
+                                <span class="visually-hidden">Мы в Google Plus</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--ig" href="#" title="Мы в Инстаграмме">
+                                <span class="visually-hidden">Мы в Инстаграмме</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                    <p>Создание и продвижение сайта <a href="https://www.darvin-studio.ru/">Darvin Studio</a></p>
+                    <p><a href="#">Политика конфиденциальности</a></p>
+                    <p>©2017.Все права защищены</p>
+                </div>
+                </div>
+            </div>
+
+        <div class="page-footer__background-darkblue">
+            <section class="site-map">
+                <h2 class="site-map__header">Компания</h2>
+                <nav class="site-map__navigation">
+                    <ul class="site-map__list">
+                        <li class="site-map__item">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Статьи</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Фотогалерея</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Продукция</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Вопрос-ответ</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Статьи</a>
+                        </li>
+                        <li class="site-map__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="catalog">
+                <h2 class="catalog__header">Каталог</h2>
+                <div class="catalog__background">
+                    <button class="button js-catalog__button" type="button">Каталог продукции</button>
+                </div>
+                    <nav class="catalog__navigation">
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a href="#">Пункт №1</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №2</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №3</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №4</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №5</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №6</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №7</a>
+                        </li>
+                        <li class="catalog__item">
+                            <a href="#">Пункт №8</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="./build/js/app.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+</body>
+</html>

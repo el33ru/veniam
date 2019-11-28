@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+  height: 45px;
+
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: $bg-lightblue;
+  text-align: center;
+  border: none;
+  &:hover {
+    transition: all 3s ease;
+    background-color: $bg-darkblue;
+  }
+}
+
+
+

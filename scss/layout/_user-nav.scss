@@ -1,0 +1,105 @@
+.user-list {
+  @include reset-list;
+  display: flex;
+
+  margin: 20px;
+}
+
+.time-to-call {
+  position: relative;
+  padding-left:50px;
+  padding-right: 40px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 35px;
+
+    width: 1px;
+    height: 25px;
+
+    background-color: #cacac9;
+    color: black;
+  }
+}
+
+.user-list__item__phone a {
+  &::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    background-image: url("../../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    color: black;
+  }
+}
+
+.user-list__item__time {
+  padding: 0;
+  margin: 0;
+
+  line-height: 20px;
+  color: #595959;
+}
+
+.user-list__item__phone {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.user-list__item__phone a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-list__item__button {
+  margin-left: 20px;
+  padding: 0 20px;
+}
+
+
+@media (max-width: 900px) {
+  .user-list {
+    justify-content: space-between;
+  }
+  .connection {
+    display: flex;
+    flex-grow: 1;
+  }
+  .user-list__item__button {
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .user-list {
+    margin-left: 0;
+  }
+  .time-to-call {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .user-list {
+    margin-top: 0;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  .user-list__item {
+    margin-bottom: 10px;
+  }
+}
