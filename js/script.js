@@ -34,7 +34,7 @@ $(function() {
 });
 
 $(function() {
-    $(".slide-one").owlCarousel({
+    $(".main-slider").owlCarousel({
         loop: true,
         items: 1,
         nav: false,
@@ -52,7 +52,7 @@ $(function() {
         }
         $('.counter').text(+item+"/"+items)
     }
-    $(".slide-two").owlCarousel({
+    $(".slider-hits").owlCarousel({
         loop: true,
         margin: 20,
         nav: false,

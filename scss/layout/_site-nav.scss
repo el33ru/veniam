@@ -192,7 +192,7 @@
   }
 }
 
-.button-list {
+.button-inside__list {
   z-index: 5;
   cursor: pointer;
   display: none;
@@ -221,12 +221,12 @@
         box-shadow: 0 8px 0 0 $bg-darkblue, 0 16px 0 0 $bg-darkblue;
       }
     }
-    .button-list  {
+    .button-inside__list  {
       display: block;
     }
   }
   &:focus {
-    .button-list {
+    .button-inside__list {
       display: block;
     }
   }
@@ -247,7 +247,7 @@
   border-top: 1px solid #cdcdcd;
 }
 
-.button-list li {
+.button-inside__list li {
   &:first-child {
     border: none;
   }
@@ -278,7 +278,7 @@
   .site-nav__buttons {
     flex-grow: 1;
   }
-  .button-list {
+  .button-inside__list {
     position: relative;
     right: 0;
     z-index: 1;
